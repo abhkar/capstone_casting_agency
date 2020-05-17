@@ -20,9 +20,9 @@ def after_request(response):
       return response
 
 
-  @app.route('/movies')
-  @requires_auth('view:movies')
-  def get_movies():
+@app.route('/movies')
+@requires_auth('view:movies')
+def get_movies():
       movies = Movie.query.all()
       movies = [movie.format() for movie in movies]
       for movie in movies:
