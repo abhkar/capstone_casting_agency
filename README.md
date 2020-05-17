@@ -41,7 +41,9 @@ Client Secret:
 vyTpeTi5H8DBp1mIAjOHwdiVWuVf24FEYvwDCRHE6XdtjQMbdCIXrcfJMB5xHK3A
 
 
+postgres database URL in Heroku
 
+postgres://hsdchansekpnfx:2d3aad731b6d6c8a1731fc90e72bf9430a73660dab6744e7fa9608b161282ecc@ec2-52-87-135-240.compute-1.amazonaws.com:5432/d9e618cuedj9g8
 
 
 
