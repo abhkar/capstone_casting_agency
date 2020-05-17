@@ -25,7 +25,7 @@ GET '/movies'
     This endpoint fetches all the movies in the database and displays them as json 
 
 GET '/actors'
-    This endpoint fetches all the actors in the databse and displays them as json 
+    This endpoint fetches all of the actors in the databse and displays them as json 
 
 POST '/movies/create'
     This endpoint will create a new movie in the database based on the json that is in the body of the request 
@@ -43,4 +43,4 @@ PATCH '/actors/patch/int:actor_id'
     This endpoint will modify the actor that corresponds to the actor ID that is passed into the url based on the json that is passed into the body of the request 
 
 PATCH '/movies/patch/int:movie_id'
-    This endpoint will modify the movie that corresponds to the movie ID that is passed into the url based on the json that is passed into the body of the request
+    This endpoint will modify the movie that corresponds to the movie ID which is passed in the url based on the json that is passed into the body of the request
