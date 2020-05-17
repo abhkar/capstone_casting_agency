@@ -29,16 +29,16 @@ def get_movies():
         movie['actors'] = [i.format() for i in movie['actors']]
       return jsonify(movies)
   
-  @app.route('/actors')
-  @requires_auth('view:actors')
-  def get_actors():
+@app.route('/actors')
+@requires_auth('view:actors')
+def get_actors():
       actors = Actor.query.all()
       actors = [actor.format() for actor in actors]
       return jsonify(actors)
 
-  @app.route('/movies/create', methods=['POST'])
-  @requires_auth('post:movie')
-  def post_new_movie():
+@app.route('/movies/create', methods=['POST'])
+@requires_auth('post:movie')
+def post_new_movie():
       body = request.get_json()
 
       title = body.get('title', None)
@@ -55,9 +55,9 @@ def get_movies():
         'new_movie': new_movie
       })
 
-  @app.route('/actors/create', methods=['POST'])
-  @requires_auth('post:actor')
-  def post_new_actor():
+@app.route('/actors/create', methods=['POST'])
+@requires_auth('post:actor')
+def post_new_actor():
       body = request.get_json()
       name = body.get('name', None)
       age = body.get('age', None)
@@ -75,9 +75,9 @@ def get_movies():
         'new_actor': new_actor
       })
 
-  @app.route('/movies/delete/<int:movie_id>', methods=['DELETE'])
-  @requires_auth('delete:movie')
-  def delete_movie(movie_id):
+@app.route('/movies/delete/<int:movie_id>', methods=['DELETE'])
+@requires_auth('delete:movie')
+def delete_movie(movie_id):
       Movie.query.filter(Movie.id == movie_id).delete()
       db.session.commit()
       db.session.close()
@@ -86,9 +86,9 @@ def get_movies():
         "message" : "Delete occured"
       })
 
-  @app.route('/actors/delete/<int:actor_id>', methods=['DELETE'])
-  @requires_auth('delete:actor')
-  def delete_actor(actor_id):
+@app.route('/actors/delete/<int:actor_id>', methods=['DELETE'])
+@requires_auth('delete:actor')
+def delete_actor(actor_id):
       Actor.query.filter(Actor.id == actor_id).delete()
       db.session.commit()
       db.session.close()
@@ -97,9 +97,9 @@ def get_movies():
         "message" : "Delete occured"
       })
 
-  @app.route('/actors/patch/<int:actor_id>', methods=['PATCH'])
-  @requires_auth('patch:actors')
-  def patch_actor(actor_id):
+@app.route('/actors/patch/<int:actor_id>', methods=['PATCH'])
+@requires_auth('patch:actors')
+def patch_actor(actor_id):
 
       actor = Actor.query.filter(Actor.id== actor_id)
       body = request.get_json()
@@ -117,9 +117,9 @@ def get_movies():
         "message": "update occured"
       })
     
-  @app.route('/movies/patch/<int:movie_id>')
-  @requires_auth('patch:movies')
-  def patch_movie(movie_id):
+@app.route('/movies/patch/<int:movie_id>')
+@requires_auth('patch:movies')
+def patch_movie(movie_id):
       movie = Movie.query.filter(Movie.id == movie_id)
       body = request.get_json()
       title = body.get('title', None)
@@ -132,16 +132,16 @@ def get_movies():
         "message": "update occured"
       })
 
-  @app.errorhandler(404)
-  def not_found(error):
+@app.errorhandler(404)
+def not_found(error):
       return jsonify({
         'success': False,
         'error' : 404,
         'message' : 'Not Found'
       }), 404
 
-  @app.errorhandler(422)
-  def unprocessable_entity(error):
+@app.errorhandler(422)
+def unprocessable_entity(error):
       return jsonify({
         'success': False,
         'error': 422,
