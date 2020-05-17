@@ -41,6 +41,35 @@ Client Secret:
 vyTpeTi5H8DBp1mIAjOHwdiVWuVf24FEYvwDCRHE6XdtjQMbdCIXrcfJMB5xHK3A
 
 
+
+
+These are the permissions allowed inn the API:
+
+List of Permissions (Scopes)
+
+These are all the permissions (scopes) that this API uses.
+
+Permission	Description	
+
+get:actors	Getting actors	
+
+get:movies	Getting movies	
+
+post:actors	Adding actors	
+
+post:movies	Adding movies	
+
+patch:actors	Modifying actors	
+
+patch:movies	Modifying movies	
+
+delete:actors	Removing actors	
+
+delete:movies	Removing movies
+
+
+
+
 JWT with Casting Assistant Access:
 
 eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRRd3BwZDBzeUZfa0FnSE56UjZoVSJ9.eyJpc3MiOiJodHRwczovL2FiaGthci5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVjMTgzNTE0MGZhNTYwYzc1NjRjOGY5IiwiYXVkIjoiY2FzdGluZyIsImlhdCI6MTU4OTc0MDUzNywiZXhwIjoxNTg5NzQ3NzM3LCJhenAiOiJmRkcwUms3NzYxV25DUzlEQmVLV254YlExMU9zREswUiIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiXX0.V4HKST0WE25m0I0En4NMIdXjYNcOW9SQh0rNlVrpSVGMLbO321vCipfUPAVglOqt7DYqB-rMFRyOzAW7hGh-O2gH-8eCZY7VLOXuSIV25_dL1F1orxVKRpaEbSM1_V1IwUIt9vz_GK7XMksCy4z2K_PNZ-IN-DPPMH5E3H9SByPAo_agO4kftARzhsOeCu5mDA8hK2m6GbNkS-daJeccndBmkiGfcBpeE3OHCUX-f7KFCL94uTinsTd_GH6qkgCi9r6nQyUZKeuWa8VwKhl6vxIZ6sx14RMcxyqm-SUZ4RaIpCDQ0nlGuLMZSpWOdZAqxEEt-RsJtbEqpnTFkQGCsQ
