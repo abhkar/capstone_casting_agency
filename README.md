@@ -1,19 +1,25 @@
-This project is the final project for the Udacity Full Stack Developer Nano Degree 
+This project is the final project for the Udacity FSND
 
-The project is to simulate a casting agency. This includes having actors and movies and assigning actors to movies. 
+The project is about a casting agency. This includes having actors and movies and assigning actors to movies. 
 
 This project has two models/tables: A movie table that holds all the movies and an actors table that holds all the actors. For each movie, there are many actors so there is a one to many relationship there. 
 
 To login or set up an account, go to the following url: 
 
-https://casting-capstone.auth0.com/authorize?audience=cast&response_type=token&client_id=UdxgyT6RC2frwGoZ7lJEO3FDCRRoDZq0&redirect_uri=https://capstone-casting.herokuapp.com/login-results
+https://abhkar.auth0.com/authorize?audience=casting&response_type=token&client_id=fFG0Rk7761WnCS9DBeKWnxbQ11OsDK0R&redirect_uri=https://abhkar1.herokuapp.com/login-results
 
-There are three roles within the API. Casting Assistant, Casting Director and Executive Producer. The logins for the three roles has been provided in the separate notes 
+There are three roles within the API. 
+
+1) Casting Assistant 
+2) Casting Director and 
+3) Executive Producer. 
+
+The logins for the three roles has been provided in the separate notes 
 
 The url for the API:
-https://capstone-casting.herokuapp.com/
+https://abhkar1.herokuapp.com/
 
-The endpoints are as follows: 
+The endpoints are : 
 
 GET '/movies'
     This endpoint fetches all the movies in the database and displays them as json 
