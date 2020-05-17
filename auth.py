@@ -7,7 +7,7 @@ from urllib.request import urlopen
 
 AUTH0_DOMAIN = 'abhkar.auth0.com'
 ALGORITHMS = ['RS256']
-API_AUDIENCE = 'image'
+API_AUDIENCE = 'casting'
 
 '''
 Exception for Auth errors
