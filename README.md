@@ -43,29 +43,34 @@ vyTpeTi5H8DBp1mIAjOHwdiVWuVf24FEYvwDCRHE6XdtjQMbdCIXrcfJMB5xHK3A
 
 
 
+
+
 These are the permissions allowed inn the API:
 
 List of Permissions (Scopes)
 
 These are all the permissions (scopes) that this API uses.
 
-Permission	Description	
+Permission	                      Description	
 
-get:actors	Getting actors	
+get:actors	                      Getting actors	
 
-get:movies	Getting movies	
+get:movies	                      Getting movies	
 
-post:actors	Adding actors	
+post:actors	                      Adding actors	
 
-post:movies	Adding movies	
+post:movies	                      Adding movies	
 
-patch:actors	Modifying actors	
+patch:actors	                  Modifying actors	
 
-patch:movies	Modifying movies	
+patch:movies	                  Modifying movies	
 
-delete:actors	Removing actors	
+delete:actors	                  Removing actors	
 
-delete:movies	Removing movies
+delete:movies	                  Removing movies
+
+
+
 
 
 
@@ -145,6 +150,16 @@ Sample Result from jwt.io
     "post:movies"
   ]
 }
+
+
+
+
+
+
+
+
+
+
 
 
 The endpoints are : 
